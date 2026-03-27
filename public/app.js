@@ -5,7 +5,9 @@ const mensajeElement = document.getElementById("mensaje");
 const botonAccesoProtegido = document.getElementById("acceso-protegido");
 const parrafoMensajeProtegido = document.getElementById("mensaje-protegidos");
 
-const API_URL = "http://localhost:3000";
+const API_URL = window.location.hostname === "localhost"
+               ? "http://localhost:3000"
+               : "https://registrologinserver-production.up.railway.app";
 
 registerForm.addEventListener("submit", async (e) => {
   e.preventDefault();
