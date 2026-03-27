@@ -30,7 +30,7 @@ Proyecto desarrollado para la materia de programación en la universidad. Es una
 - **Supabase** — La aplicación se conecta a una base de datos PostgreSQL en la nube a través del cliente oficial de Supabase. Almacena los usuarios con su contraseña encriptada.
 - **Middleware de autenticación** — Se implementó un middleware personalizado que intercepta las peticiones a rutas protegidas, extrae el token JWT del header `Authorization` y lo verifica antes de dar acceso.
 - **Variables de entorno** — Las credenciales sensibles (URL de Supabase, clave anónima y JWT secret) se manejan mediante un archivo `.env` y nunca se exponen en el código fuente.
-- **Railway** — La aplicación está desplegada en Railway, que detecta automáticamente el entorno Node.js y sirve la aplicación en producción.
+- **Railway** — La aplicación está desplegada en Railway, que detecta automáticamente el entorno Node.js y sirve la aplicación en producción, lo hice con el fin que no tuviese que descargar todo el repositorio para que pudiese utilizar.
 
 ---
 
