@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro_login</title>
+</head>
+<body>
+   
+    <div class="formulario-registro" id="registro">
+        <h2>Registro</h2>
+    <form id="formulario-registro">
+        <input type="username" id="register-username" placeholder="Nombre de usuario" required>
+        <input type="password" id="register-password" placeholder="Contraseña" required>
+        <button type="submit">Registrar</button>
+    </form>
+    </div>
+
+    <div class="formulario-iniciar-sesion" id="login">
+         <h2>Iniciar Sesión</h2>
+    <form id ="formulario-login">
+        <input type="username" id="login-username" placeholder="Nombre de usuario" required>
+        <input type="password" id="login-password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+    </div>
+
+    <p id="mensaje"></p>
+
+    <div id="contenido-protegido" style="margin-top: 20px;">
+        <h3>Contenido Protegido</h3>
+        <button id="acceso-protegido">Acceder a datos protegidos</button>
+        <p id="mensaje-protegidos"></p>
+    </div>
+
+    <script src="app.js"></script>    
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formulario-registro,
+.formulario-iniciar-sesion {
+  background: #fff;
+  border: 1px solid #dde3ed;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #185FA5;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #ccd6e0;
+  border-radius: 999px;
+  font-size: 14px;
+  background: #f5f8fb;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #378ADD;
+  box-shadow: 0 0 0 3px #E6F1FB;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #185FA5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #378ADD;
+}
+
+#contenido-protegido {
+  grid-column: 1 / -1;
+  background: #fff;
+  border: 1px solid #dde3ed;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#acceso-protegido {
+  width: auto;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1.5px solid #185FA5;
+  color: #185FA5;
+}
+
+#acceso-protegido:hover {
+  background: #185FA5;
+  color: #fff;
+}
+
+#mensaje, #mensaje-protegidos {
+  font-size: 13px;
+  color: #666;
+  margin-top: 0.5rem;
+}
